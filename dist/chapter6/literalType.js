@@ -8,4 +8,10 @@ var LiteralType;
     }
     const user = fromKey("user:tt");
     console.log(user);
+    function signNumber(type) {
+        return type === "plus" ? 1 : -1;
+    }
+    signNumber("plus");
+    signNumber("minus");
+    // signNumber("hoge"); compile error
 })(LiteralType || (LiteralType = {}));
