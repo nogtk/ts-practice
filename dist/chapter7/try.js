@@ -2,7 +2,6 @@ import * as fs from "fs";
 import { fileURLToPath } from "url";
 import path from "path";
 const filePath = fileURLToPath(import.meta.url);
-console.log(filePath);
 const fileDir = path.dirname(filePath);
 const fileLocation = path.join(fileDir, '../../src/chapter7/sample.txt');
 fs.readFile(fileLocation, { encoding: "utf8" }, (err, data) => {
